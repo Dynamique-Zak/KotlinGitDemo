@@ -7,7 +7,6 @@ class AttrComponent(var hp: Int) {
         if (hp < 0 ) {
             hp = 0;
         }
-        // TODO : Empecher négatif (ex hp devient -58)
         return true;
     }
 }
