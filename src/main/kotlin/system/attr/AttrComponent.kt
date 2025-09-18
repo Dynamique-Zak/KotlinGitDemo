@@ -7,7 +7,9 @@ class AttrComponent(var hp: Int) {
         if (hp < 0 ) {
             hp = 0;
         }
-        // TODO : Empecher négatif (ex hp devient -58)
+        if(hp==1) {
+            hp = 0; // parce qu'un jeu c'est pas toujours juste
+        }
         return true;
     }
 
