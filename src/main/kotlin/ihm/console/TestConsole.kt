@@ -7,8 +7,15 @@ class TestConsole {
     fun start(){
         var attrComponent = AttrComponent(hp = 100)
 
-        print("A ${attrComponent.hp} HP");
+        println("A ${attrComponent.hp} HP");
 
-        // TODO lui faire perdre des vies
+        // je fais perdre 30 pv
+        attrComponent.looseHP(30)
+        println("Les pv sont à ${attrComponent.hp} HP");
+
+
+        // je fais perdre 200 pv
+        attrComponent.looseHP(200)
+        println("Les pv sont à ${attrComponent.hp} HP");
     }
 }
