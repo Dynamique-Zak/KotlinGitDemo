@@ -10,4 +10,9 @@ class AttrComponent(var hp: Int) {
         // TODO : Empecher négatif (ex hp devient -58)
         return true;
     }
+
+    fun gainHp(amount: Int) : Boolean{
+        hp+= amount;
+    }
+
 }
