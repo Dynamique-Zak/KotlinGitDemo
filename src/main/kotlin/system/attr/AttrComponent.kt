@@ -17,11 +17,6 @@ class AttrComponent(var hp: Int) {
             hp = 0;
         }
 
-        // Forcer les vie a 0 si 1hp
-        if(hp==1) {
-            hp = 0; // parce qu'un jeu c'est pas toujours juste
-        }
-
         // Notifier si les vie change
         if (notify){
             onHPChange();
